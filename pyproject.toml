@@ -26,8 +26,19 @@ directory_type = "project"
 [tool.dg.project]
 root_module = "extrato_pipeline"
 
+[tool.mypy]
+python_version = "3.13"
+
+[[tool.mypy.overrides]]
+module = "pymupdf4llm"
+ignore_missing_imports = true
+
 [dependency-groups]
 dev = [
     "dagster-dg-cli>=1.13.13",
+    "mypy>=2.3.0",
+    "pandas-stubs>=3.0.3.260530",
+    "pre-commit>=4.6.1",
     "pytest>=9.1.1",
+    "ruff>=0.16.0",
 ]
