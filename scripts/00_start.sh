@@ -9,4 +9,4 @@ mkdir -p "$DAGSTER_HOME"
 echo "DAGSTER_HOME=$DAGSTER_HOME"
 echo "Iniciando Dagster em http://localhost:3000 ..."
 cd "$PROJECT_ROOT"
-uv run dagster dev
+uv run dg dev
