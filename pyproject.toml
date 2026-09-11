@@ -36,6 +36,8 @@ ignore_missing_imports = true
 [dependency-groups]
 dev = [
     "dagster-dg-cli>=1.13.13",
+    "ipykernel>=7.3.0",
+    "jupyter>=1.1.1",
     "mypy>=2.3.0",
     "pandas-stubs>=3.0.3.260530",
     "pre-commit>=4.6.1",

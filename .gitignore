@@ -12,6 +12,10 @@ wheels/
 # Dados (PDFs e outputs — informação financeira pessoal)
 data/
 
+# Notebooks de prototipagem (outputs podem conter dados pessoais reais)
+notebook/
+.ipynb_checkpoints/
+
 # Ambiente local
 .env
 
