@@ -13,7 +13,7 @@ statement_partitions = MultiPartitionsDefinition(
 )
 
 
-def dims(context: AssetExecutionContext) -> tuple[str, str, str]:
+def parse_partition_key(context: AssetExecutionContext) -> tuple[str, str, str]:
     """owner, month (YYYY-MM) and month slug (YYYY_MM) from the partition key."""
     keys = context.partition_key.keys_by_dimension
     owner = keys["owner"]
