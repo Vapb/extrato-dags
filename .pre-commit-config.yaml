@@ -24,3 +24,11 @@ repos:
     hooks:
       - id: mypy
         additional_dependencies: [pandas-stubs]
+  - repo: local
+    hooks:
+      - id: pytest
+        name: pytest
+        entry: uv run pytest tests/
+        language: system
+        pass_filenames: false
+        always_run: true
