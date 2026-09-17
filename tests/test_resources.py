@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from extrato_pipeline.resources import RawDataSource
+from src.resources import RawDataSource
 
 
 def test_get_pdf_path_builds_expected_layout():
